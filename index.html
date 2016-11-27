@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="copy2clipboard.js"></script>
+
+  <style>
+    .icon-clipboard:after{
+      content:'\1f4cb';
+    }
+  </style>
+</head>
+
+<body>
+  <button class="C2cb" data-copy2clipboard="Some data in button">Click button to copy</button>
+  <br><br>
+
+  <a class="C2cb" data-copy2clipboard="Some data in link" href="#">Click link to copy</a>
+  <br><br>
+
+  <div class="C2cb" data-copy2clipboard="Some data in div">Click this div to copy</div>
+  <br>
+
+  Click icon to copy<span class="icon-clipboard C2cb" data-copy2clipboard="Some data in icon"></span>
+</body>
+</html>
